@@ -1,0 +1,67 @@
+plugins {
+    id "com.android.application"
+}
+
+def animaxVersion = "0.0.1-alpha.9"
+def lynxVersion = "4.0.0-nightly.202606030642.55.ga9c771cc"
+def skityVersion = "1.1.0-alpha.0"
+def textraVersion = "0.1.5"
+
+android {
+    namespace "com.rickai.animaxdemo"
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.rickai.animaxdemo"
+        minSdk 21
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a", "x86_64"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+        }
+    }
+
+    packaging {
+        resources {
+            excludes += [
+                "META-INF/*.kotlin_module",
+                "META-INF/DEPENDENCIES",
+                "META-INF/LICENSE*",
+                "META-INF/NOTICE*"
+            ]
+        }
+        jniLibs {
+            pickFirsts += [
+                "**/libc++_shared.so",
+                "**/libanimax.so",
+                "**/libanimax_textra.so",
+                "**/liblynxbase.so",
+                "**/liblynxtrace.so",
+                "**/liblynxtextra.so",
+                "**/libskity.so",
+                "**/libtttext_lite.so"
+            ]
+        }
+    }
+}
+
+dependencies {
+    implementation "androidx.appcompat:appcompat:1.0.0"
+
+    implementation "org.lynxsdk.lynx:animax-sdk:${animaxVersion}"
+    implementation "org.lynxsdk.lynx:animax-textra:${animaxVersion}"
+
+    runtimeOnly "org.lynxsdk.lynx:lynx-base:${lynxVersion}"
+    runtimeOnly "org.lynxsdk.lynx:lynx-trace:${lynxVersion}"
+    runtimeOnly "org.lynxsdk.lynx:skity-native:${skityVersion}"
+    runtimeOnly "org.lynxsdk.lynx:lynxtextra:${textraVersion}"
+}
