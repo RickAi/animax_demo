@@ -21,7 +21,7 @@ post_install do |installer|
 end
 
 target 'AnimaXDemo' do
-  pod 'AnimaX', '0.0.1-alpha.9', :subspecs => [
+  pod 'AnimaX', '1.0.0', :subspecs => [
     'Core',
     'Framework',
     'RenderBackend/Skity',

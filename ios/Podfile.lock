@@ -1,25 +1,25 @@
 PODS:
-  - AnimaX/Core (0.0.1-alpha.9):
+  - AnimaX/Core (1.0.0):
     - AnimaX/ThirdParty
     - skity (= 1.1.0-alpha.0)
     - SSZipArchive
-  - AnimaX/Framework (0.0.1-alpha.9):
+  - AnimaX/Framework (1.0.0):
     - AnimaX/Core
-    - AnimaX/Framework/animax_ios_framework (= 0.0.1-alpha.9)
-  - AnimaX/Framework/animax_ios_framework (0.0.1-alpha.9):
+    - AnimaX/Framework/animax_ios_framework (= 1.0.0)
+  - AnimaX/Framework/animax_ios_framework (1.0.0):
     - AnimaX/Core
-  - AnimaX/RenderBackend/Skity (0.0.1-alpha.9):
+  - AnimaX/RenderBackend/Skity (1.0.0):
     - AnimaX/Core
     - skity (= 1.1.0-alpha.0)
-  - AnimaX/Textra (0.0.1-alpha.9):
+  - AnimaX/Textra (1.0.0):
     - AnimaX/Core
     - LynxTextra (= 0.1.5)
-  - AnimaX/ThirdParty (0.0.1-alpha.9):
-    - AnimaX/ThirdParty/fml (= 0.0.1-alpha.9)
-    - AnimaX/ThirdParty/rapidjson (= 0.0.1-alpha.9)
-  - AnimaX/ThirdParty/fml (0.0.1-alpha.9):
+  - AnimaX/ThirdParty (1.0.0):
+    - AnimaX/ThirdParty/fml (= 1.0.0)
+    - AnimaX/ThirdParty/rapidjson (= 1.0.0)
+  - AnimaX/ThirdParty/fml (1.0.0):
     - LynxBase/Framework (= 4.0.0-nightly.202606030642.55.ga9c771cc)
-  - AnimaX/ThirdParty/rapidjson (0.0.1-alpha.9)
+  - AnimaX/ThirdParty/rapidjson (1.0.0)
   - LynxBase/Framework (4.0.0-nightly.202606030642.55.ga9c771cc):
     - LynxServiceAPI/Core
   - LynxServiceAPI/Core (3.8.0)
@@ -28,11 +28,11 @@ PODS:
   - SSZipArchive (2.4.3)
 
 DEPENDENCIES:
-  - AnimaX/Core (= 0.0.1-alpha.9)
-  - AnimaX/Framework (= 0.0.1-alpha.9)
-  - AnimaX/RenderBackend/Skity (= 0.0.1-alpha.9)
-  - AnimaX/Textra (= 0.0.1-alpha.9)
-  - AnimaX/ThirdParty (= 0.0.1-alpha.9)
+  - AnimaX/Core (= 1.0.0)
+  - AnimaX/Framework (= 1.0.0)
+  - AnimaX/RenderBackend/Skity (= 1.0.0)
+  - AnimaX/Textra (= 1.0.0)
+  - AnimaX/ThirdParty (= 1.0.0)
   - LynxBase/Framework (= 4.0.0-nightly.202606030642.55.ga9c771cc)
   - LynxTextra (= 0.1.5)
   - skity (= 1.1.0-alpha.0)
@@ -47,13 +47,13 @@ SPEC REPOS:
     - SSZipArchive
 
 SPEC CHECKSUMS:
-  AnimaX: 4929aa00ce17587ded2c41f5182960330c545aae
+  AnimaX: 08bd2858dc541e1452e047d04f3fe12d11fd30d8
   LynxBase: a020f51cb322c1b6f6a6a9cdbc7814de6693fc2b
   LynxServiceAPI: 9c6f5d64e123d8e8248b08285ed6276bd7b5f589
   LynxTextra: 5b41f89cc45f0f9f6ca4475bbe0775f934f381b6
   skity: c35e5b724a7d26315903f54dc068db7e3ea49b1d
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
 
-PODFILE CHECKSUM: bac8aa996ea5eac515fc865dd755004930bbe09e
+PODFILE CHECKSUM: 74eb08b11fcd859ba95e74e98ba166eeee0e9f4e
 
 COCOAPODS: 1.16.2

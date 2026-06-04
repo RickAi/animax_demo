@@ -2,7 +2,7 @@ plugins {
     id "com.android.application"
 }
 
-def animaxVersion = "0.0.1-alpha.9"
+def animaxVersion = "1.0.0"
 def lynxVersion = "4.0.0-nightly.202606030642.55.ga9c771cc"
 def skityVersion = "1.1.0-alpha.0"
 def textraVersion = "0.1.5"

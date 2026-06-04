@@ -4,12 +4,12 @@ Minimal Android and iOS apps that load `simple_shape.json` through the published
 
 ## Versions
 
-- AnimaX: `0.0.1-alpha.9`
+- AnimaX: `1.0.0`
 - Lynx: `4.0.0-nightly.202606030642.55.ga9c771cc`
 - skity: `1.1.0-alpha.0`
 - LynxTextra: `0.1.5`
 
-These versions match the `publish-release` workflow run for `v0.0.1-alpha.9`.
+These versions use the published AnimaX `1.0.0` packages with the runtime dependency versions listed above.
 
 ## Android
 
